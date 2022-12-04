@@ -12,6 +12,11 @@ app = Flask(__name__)
 # ‘/’ URL is bound with hello_world() function.
 def hello():
     return 'Hello World'
+
+@app.route('/')
+# ‘/’ URL is bound with hello_world() function.
+def welcome():
+    return 'Hello welcome'
  
 # main driver function
 if __name__ == '__main__':
