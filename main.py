@@ -8,9 +8,9 @@ app = Flask(__name__)
 # The route() function of the Flask class is a decorator,
 # which tells the application which URL should call
 # the associated function.
-@app.route('/')
+@app.route('/hello')
 # ‘/’ URL is bound with hello_world() function.
-def hello_world():
+def hello():
     return 'Hello World'
  
 # main driver function
@@ -18,5 +18,5 @@ if __name__ == '__main__':
     print("hey kousar, how are you!. take care")
     # run() method of Flask class runs the application
     # on the local development server.
-    app.run()
+    app.run(host="0.0.0.0")
 
